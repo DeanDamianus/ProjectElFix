@@ -21,13 +21,13 @@ $result = mysqli_query($con, $query);
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <title>NYIKATBUOS!</title>
-    <link rel="icon" href="Logo.png" type="image/icon type">
+    <link rel="icon" href="images/Logo.png" type="image/icon type">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
     
     <nav>
-        <label class="logo"><img src="Logo.png" alt="Jiga Logo"></label>
+        <label class="logo"><img src="Logo.png" alt="NYIKATBUOS!"></label>
         
         <ul class="bar">
             <li><a class="active" href="#home">HOME</a><li>
@@ -35,7 +35,7 @@ $result = mysqli_query($con, $query);
             <li><a href="#ABOUT">ABOUT</a><li>
         </ul>
     </nav>
-    <div id="banner">
+    <div class="parallax-banner">
         <h1>
             NYIKATBUOS!
         </h1>
@@ -62,5 +62,14 @@ $result = mysqli_query($con, $query);
     </div>
     <span id="ABOUT">TENTANG KAMI</span>
     
+    <script>
+        document.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const parallaxBanner = document.querySelector('.parallax-banner');
+            const contentSection = document.getElementById('content');
+            parallaxBanner.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
+            contentSection.style.backgroundPositionY = -scrollPosition * 0.3 + 'px';
+        });
+    </script>
 </body>
 </html>

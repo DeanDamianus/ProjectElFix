@@ -1,8 +1,25 @@
-#banner {
+.parallax-banner {
   background-image: url('shoemaker.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  
+  background-size: cover;
+  background-attachment: fixed; /* This enables the parallax effect */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e4c2aa;
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+  font-family: 'Anton', sans-serif;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+}
+
+#content {
+  background-color: WHITE;
+  padding: 50px 0; /* Add padding for better visibility */
+  background-attachment: fixed; /* This enables the parallax effect */
 }
 *{
   padding: 0;
@@ -26,7 +43,7 @@ nav{
     float: left;
     width: 110px;
     padding-left: 50px;
-    padding-top: 8px;
+    padding-top: 15px;
     padding-bottom:8px;
     position: relative;
 }
@@ -124,13 +141,15 @@ input[type="search"]{
   text-align: center;
   margin-right: 10px;
   margin-left: 15px;
-  height: 410px;
-  margin-bottom: 20px;
+  height: 490px;
+  margin-bottom: 50px;
   border: 2px solid black;
+  border-radius: 10px; /* Add this line for rounded corners */
 }
 #desc{
   font-size: 12px;
   font-weight: bold;
+  text-transform: capitalize;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -151,23 +170,30 @@ input[type="search"]{
   transform: translateX(-50%); 
   font-family: 'Courier New', Courier, monospace;
 }
-#content .col a{
-  color:white;
+#content .col a {
+  color: white;
+  text-decoration: none;
 }
-#content .col h2{
+#content .col h2 {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  color:white;
+  color: white;
   border: 3px solid white;
   text-align: center;
   font-size: 15px;
   padding: 10px;
-  margin: 260px 30px 30px 30px;
+  margin: 300px 30px 50px 30px;
+  cursor: pointer; /* Change the cursor to a pointer */
+  transition: color 0.3s ease; /* Add a smooth transition for the color change */
 }
-#content .col h3{
+
+#content .col h2:hover {
+  color: #e02a32; /* Change the color on hover */
+}
+#content .col h3 {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  color:white;
+  color: white;
   border: 3px solid white;
   text-align: center;
   font-size: 15px;
@@ -180,18 +206,6 @@ input[type="search"]{
   margin-left: 80px;
   margin-top: 100px;
   scroll-behavior: smooth;
-}
-.level2{
-  width: 140px;
-  float: left;
-  margin-left: 80px;
-  margin-top: 100px;
-}
-.level3{
-  width: 140px;
-  float: left;
-  margin-left: 80px;
-  margin-top: 100px;
 }
 .adder{
   padding-bottom: 200px;
