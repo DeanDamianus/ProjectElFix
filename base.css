@@ -101,6 +101,10 @@ nav a:hover{
 #banner h1{
   font-family: 'Anton', sans-serif;
   color: #e4c2aa;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
   padding-left: 16%;
   padding-top: 9%;
   font-size:220px;
