@@ -50,8 +50,9 @@ $result = mysqli_query($con, $query);
             $urlFriendlyName = strtolower(str_replace(' ', '_', $categoryName));
             ?>
             <div class="col">
-                <img id="level1" src="level1.png" alt="Level1">
+                <img id="level1" src=<?php echo $urlFriendlyName . '.png'; ?> alt="Level1">
                 <h2><a href="<?php echo $urlFriendlyName . '.php'; ?>"><?php echo $categoryName; ?></a></h2>
+                <span id="desc"><?php echo $categoryName2; ?></span>
             </div>
 
             <?php
