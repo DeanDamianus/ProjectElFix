@@ -55,13 +55,31 @@ $result = mysqli_query($con, $query);
                 <span id="desc"><?php echo $categoryName2; ?></span>
             </div>
 
-            <?php
-            
+            <?php 
         }
         ?>
     </div>
-    <span id="ABOUT">TENTANG KAMI</span>
-    
+        <span id="ABOUT">
+        <table id='tentang'>
+            <tr>
+                <td>Kami merupakan jasa perawatan premium sepatu pertama di Indonesia berbasis media sosial yang sampai saat sudah memiliki lebih dari 70 workshop di 20 kota di Indonesia.</td>
+                <td></td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Hotline:+6287739311899</td>
+                <td>Kantor Yogykarta:
+Jl. Langenastran Kidul No.18, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55131</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        </span>
     <script>
         document.addEventListener('scroll', function () {
             const scrollPosition = window.scrollY;
@@ -71,5 +89,7 @@ $result = mysqli_query($con, $query);
             contentSection.style.backgroundPositionY = -scrollPosition * 0.3 + 'px';
         });
     </script>
+
+
 </body>
 </html>

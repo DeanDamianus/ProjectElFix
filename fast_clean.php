@@ -9,11 +9,13 @@
     <title>Fast Clean</title>
     <link rel="icon" href="Logo.png" type="image/icon type">
     <link rel="stylesheet" href="fast_clean.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body> 
-    <nav>
-        <label class="logo"><img src="Logo.png" alt="Jiga Logo"></label>
+<nav>
+        <label class="logo"><img src="Logo.png" alt="NYIKATBUOS!"></label>
+        
         <ul class="bar">
             <li><a class="active" href="base.php">HOME</a><li>
             <li><a href="base.php#LAYANAN">LAYANAN</a><li>
@@ -21,5 +23,80 @@
         </ul>
     </nav>
 
+    <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fastcleaning.png" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>FAST CLEAN</h5>
+                            <p>Description 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="deepclean.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>DEEP CLEAN</h5>
+                            <p>Description 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="whitening.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>WHITENING AND YELLOWING</h5>
+                            <p>Description 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="repaintcanvas.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>REPAINT</h5>
+                            <p>Description 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="changecolor.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>CHANGE COLOR</h5>
+                            <p>Description 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="regluing.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h5>REGLUING MESIN</h5>
+                            <p>Description 2</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
 </body>
 </html>

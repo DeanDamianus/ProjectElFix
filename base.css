@@ -137,6 +137,18 @@ input[type="search"]{
 #content{
   background-color: WHITE;
 }
+#tentang {
+  border-color: white;
+  width: 50%; /* Set the width of the table */
+  margin: 20px; /* Optional: add margin for spacing */
+}
+
+th, td {
+
+  padding: 8px; /* Optional: add padding for cells */
+  text-align: left;
+  font-size: 14px;
+}
 #content .col {
   width: 23% !important;
   background-color: #B98D74;
@@ -148,7 +160,7 @@ input[type="search"]{
   height: 490px;
   margin-bottom: 50px;
   border: 2px solid black;
-  border-radius: 10px; /* Add this line for rounded corners */
+  border-radius: 10px;
 }
 #desc{
   font-size: 12px;
