@@ -25,7 +25,6 @@ $result = mysqli_query($con, $query);
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    
     <nav>
         <label class="logo"><img src="Logo.png" alt="NYIKATBUOS!"></label>
         

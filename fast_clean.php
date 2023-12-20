@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <title>Fast Clean</title>
     <link rel="icon" href="Logo.png" type="image/icon type">
-    <link rel="stylesheet" href="fast_clean.css">
+    <link rel="stylesheet" href="carousels.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -17,9 +17,9 @@
         <label class="logo"><img src="Logo.png" alt="NYIKATBUOS!"></label>
         
         <ul class="bar">
-            <li><a class="active" href="base.php">HOME</a><li>
-            <li><a href="base.php#LAYANAN">LAYANAN</a><li>
-            <li><a href="base.php#ABOUT">ABOUT</a><li>
+            <li><a class="active" href="base.php" style="text-decoration:none">HOME</a><li>
+            <li><a href="base.php#LAYANAN" style="text-decoration:none">LAYANAN</a><li>
+            <li><a href="base.php#ABOUT" style="text-decoration:none">ABOUT</a><li>
         </ul>
     </nav>
 
@@ -30,8 +30,9 @@
                     <img src="fastcleaning.png" class="d-block w-100" alt="Image 1">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>FAST CLEAN</h5>
-                            <p>Description 1</p>
+                            <p>FAST CLEAN</p>
+                            <span>Upper,Midsole,Outsole</span><br>
+                            <span class='harga'>IDR. 15.000,00.</span>
                         </div>
                     </div>
                 </div>
@@ -39,8 +40,9 @@
                     <img src="deepclean.png" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>DEEP CLEAN</h5>
-                            <p>Description 2</p>
+                            <p>DEEP CLEAN</p>
+                            <span>Upper,Midsole,Outsole,Tali,Tongue,Insole</span><br>
+                            <span class='harga'>IDR. 25.000,00.</span>
                         </div>
                     </div>
                 </div>
@@ -48,8 +50,9 @@
                     <img src="whitening.png" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>WHITENING AND YELLOWING</h5>
-                            <p>Description 2</p>
+                            <p>UNYELLOWING & WHITENING</p>
+                            <span>Memutihkan Kembali + Free Deepclean</span><br>
+                            <span class='harga'>IDR. 70.000,00.</span>
                         </div>
                     </div>
                 </div>
@@ -57,8 +60,9 @@
                     <img src="repaintcanvas.png" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>REPAINT</h5>
-                            <p>Description 2</p>
+                            <p>REPAINT</p>
+                            <span>Canvas & Suede + Free Deepclean</span><br>
+                            <span class='harga'>IDR. 100.000,00.</span>
                         </div>
                     </div>
                 </div>
@@ -66,8 +70,9 @@
                     <img src="changecolor.png" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>CHANGE COLOR</h5>
-                            <p>Description 2</p>
+                            <p>CHANGE COLOR</p>
+                            <span>Ke Warna Yang Lebih Gelap + Freeclean</span><br>
+                            <span class='harga'>IDR. 160.000,00.</span>
                         </div>
                     </div>
                 </div>
@@ -75,8 +80,9 @@
                     <img src="regluing.png" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="text-center">
-                            <h5>REGLUING MESIN</h5>
-                            <p>Description 2</p>
+                            <p>REGLUE MESIN</p>
+                            <span>Free Deepclean + Garansi 1 Minggu</span><br>
+                            <span class='harga'>IDR. 120.000,00.</span>
                         </div>
                     </div>
                 </div>
