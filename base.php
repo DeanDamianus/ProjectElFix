@@ -29,9 +29,10 @@ $result = mysqli_query($con, $query);
         <label class="logo"><img src="Logo.png" alt="NYIKATBUOS!"></label>
         
         <ul class="bar">
-            <li><a class="active" href="#home">HOME</a><li>
-            <li><a href="#LAYANAN">LAYANAN</a><li>
-            <li><a href="#ABOUT">ABOUT</a><li>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#LAYANAN">LAYANAN</a></li>
+            <li><a href="#logofoot">ABOUT</a></li>
+
         </ul>
     </nav>
     <div class="parallax-banner">
@@ -40,43 +41,68 @@ $result = mysqli_query($con, $query);
         </h1>
         <br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <span id="LAYANAN">LAYANAN KAMI</span>
-    <div id="content">
-    <?php
-        while ($row = mysqli_fetch_assoc($result)) {
-            $categoryName = $row['jenis_layanan'];
-            $categoryName2 = $row['deskripsi'];
-            $urlFriendlyName = strtolower(str_replace(' ', '_', $categoryName));
-            ?>
-            <div class="col">
-                <img id="level1" src=<?php echo $urlFriendlyName . '.png'; ?> alt="Level1">
-                <h2><a href="<?php echo $urlFriendlyName . '.php'; ?>"><?php echo $categoryName; ?></a></h2>
-                <span id="desc"><?php echo $categoryName2; ?></span>
-            </div>
+    <div>
+        <span id="LAYANAN">LAYANAN KAMI</span>
 
-            <?php 
-        }
-        ?>
+        <div id="content">
+        <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                $categoryName = $row['jenis_layanan'];
+                $categoryName2 = $row['deskripsi'];
+                $urlFriendlyName = strtolower(str_replace(' ', '_', $categoryName));
+                ?>
+                <div class="col">
+                    <img id="level1" src=<?php echo $urlFriendlyName . '.png'; ?> alt="Level1">
+                    <h2><a href="<?php echo $urlFriendlyName . '.php'; ?>"><?php echo $categoryName; ?></a></h2>
+                    <span id="desc"><?php echo $categoryName2; ?></span>
+                </div>
+
+                <?php 
+            }
+            ?>
+        </div>
     </div>
-        <span id="ABOUT">
-        <table id='tentang'>
-            <tr>
-                <td>Kami merupakan jasa perawatan premium sepatu pertama di Indonesia berbasis media sosial yang sampai saat sudah memiliki lebih dari 70 workshop di 20 kota di Indonesia.</td>
-                <td></td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Hotline:+6287739311899</td>
-                <td>Kantor Yogykarta:
-Jl. Langenastran Kidul No.18, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55131</td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>80</td>
-            </tr>
-        </table>
+    
+
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+      <label id="logofoot"><img src="Logo.png" alt="NYIKATBUOS!"></label>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+62882-3971-4024 </p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">mikaelrajasa05@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Kami merupakan jasa perawatan sepatu di Yogyakarta berbasis media sosial yang telah berdiri selama lebih dari 3 tahun.</span>
+        </p>
+
+        <div class="footer-icons">
+    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+  </div>
+
+      </div>
+
+    </footer>
 
         </span>
     <script>
