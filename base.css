@@ -402,6 +402,7 @@ section {
   margin-bottom: 20px;
 }
 
+
 .footer-distributed .footer-icons{
   margin-top: 25px;
 }
@@ -423,7 +424,6 @@ section {
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 

@@ -53,7 +53,7 @@ $result = mysqli_query($con, $query);
                 ?>
                 <div class="col">
                     <img id="level1" src=<?php echo $urlFriendlyName . '.png'; ?> alt="Level1">
-                    <h2><a href="<?php echo $urlFriendlyName . '.php'; ?>"><?php echo $categoryName; ?></a></h2>
+                    <h2 id = "kategori"><a href="<?php echo $urlFriendlyName . '.php'; ?>"><?php echo $categoryName; ?></a></h2>
                     <span id="desc"><?php echo $categoryName2; ?></span>
                 </div>
 
