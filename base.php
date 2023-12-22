@@ -75,7 +75,7 @@ $result = mysqli_query($con, $query);
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p><span>Jalan Kepuh GK III NO.890, RT.48 /RW 12</span>Klitren Gondokusuman</p>
         </div>
 
         <div>
@@ -97,7 +97,7 @@ $result = mysqli_query($con, $query);
         </p>
 
         <div class="footer-icons">
-    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    
   </div>
 
       </div>
